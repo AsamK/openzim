@@ -233,7 +233,8 @@ inline std::string decodeUrl(const std::string &encodedUrl) {
 
   while ((pos = decodedUrl.find('%', pos)) != std::string::npos &&
 	 pos + 2 < decodedUrl.length()) {
-    sscanf(decodedUrl.substr(pos + 1, 2).c_str(), "%x", (unsigned int*)&ch);
+    auto b = decodedUrl.substr(pos + 1, 2).c_str();
+    sscanf(b, "%x", &ch);
     decodedUrl.replace(pos, 3, 1, ch);
     ++pos;
   }
