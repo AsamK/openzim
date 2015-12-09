@@ -30,3 +30,5 @@ zimdump
 zimpatch
 zimsearch
 /zimwriterfs/zimwriterfs
+CMakeFiles/
+CMakeCache.txt
