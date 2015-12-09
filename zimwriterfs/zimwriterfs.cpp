@@ -44,7 +44,7 @@
 #include <zim/writer/zimcreator.h>
 #include <zim/blob.h>
 
-#include <gumbo.h>
+#include "gumbo/gumbo.h"
 
 #define MAX_QUEUE_SIZE 100
 
